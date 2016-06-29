@@ -1,0 +1,27 @@
+#!/usr/bin/python
+
+import sys
+sys.path.append('/root/code-test-Repository/alyosha')
+
+from cli import CLI
+
+class Alyosha(object):
+    "Build, setup, and run Alyosha."
+
+    def __init__(self):
+        #self.options = None
+        #self.args = None  # May be used someday for more CLI scripts
+        #self.validate = None
+        #self.parseArgs()
+        self.setup()
+        #self.begin()
+
+    def setup(self):
+        cli = CLI()
+
+if __name__ == "__main__":
+    try:
+        Alyosha()
+
+    except Exception:
+        pass
