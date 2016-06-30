@@ -4,17 +4,30 @@ import sys
 sys.path.append('/root/code-test-Repository/alyosha')
 
 from cli import CLI
+from log import output
+
+import cfg
+CONF = cfg.CONF
 
 class Alyosha(object):
     "Build, setup, and run Alyosha."
 
-    def __init__(self):
+    def __init__(self, args=None):
+
         #self.options = None
         #self.args = None  # May be used someday for more CLI scripts
         #self.validate = None
-        #self.parseArgs()
+        self.parseArgs(args)
         self.setup()
         #self.begin()
+
+    def parseArgs(self, args):
+
+         #print args
+         CONF(args=args)
+         output(CONF.list_option)
+         output(CONF.string_option) 
+         output(CONF.enable_debugger)
 
     def setup(self):
         
