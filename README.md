@@ -11,6 +11,7 @@ bin配下にターミナルで実行するコマンド用のスクリプトを�
 bin配下のPythonファイルをスクリプト化して実行  
 
 ####引数の処理の仕方
-Ryuを参照
+optparseを利用(mininet)とoslo.configを利用(OpenStack)がある  
+ここではoslo.configを参考
 
 
