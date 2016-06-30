@@ -17,7 +17,9 @@ class Alyosha(object):
         #self.begin()
 
     def setup(self):
-        cli = CLI()
+        
+        # call cli
+        cli = CLI().cmdloop()
 
 if __name__ == "__main__":
     try:
