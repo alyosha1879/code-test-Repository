@@ -13,5 +13,5 @@ bin配下のPythonファイルをスクリプト化して実行
 ####引数の処理の仕方
 optparseを利用(mininet)とoslo.configを利用(OpenStack)がある  
 ここではoslo.configを参考
-
+いまはただオプションの指定結果を記載するだけの処理  
 
